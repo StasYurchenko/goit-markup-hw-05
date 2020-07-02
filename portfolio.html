@@ -93,7 +93,7 @@
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
-                  </div>
+                </div>
                  
                     <h2 class="projects-title">Технокряк</h2>
                     <p class="projects-text">Веб-сайт</p>
@@ -276,7 +276,7 @@
             placeholder="E-mail"
             name="Email"
             id="Email-input"
-            class="button-mail"
+            class="input-mail"
           />
           <button type="button" class="button">Подписаться</button>
         </div>
@@ -285,5 +285,13 @@
         <p class="data">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector(".page-header")
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
   </body>
 </html>

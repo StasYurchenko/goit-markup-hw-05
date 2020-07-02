@@ -27,13 +27,13 @@
         <nav>
           <ul class="site-nav list">
             <li class="item">
-              <a href="./index.html" class="link current">Студия</a>
+              <a href="./index.html" class="link current nav-link">Студия</a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+              <a href="./portfolio.html" class="link nav-link">Портфолио</a>
             </li>
             <li class="item">
-              <a href="" class="link">Контакты</a>
+              <a href="" class="link nav-link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -420,14 +420,27 @@
             placeholder="E-mail"
             name="Email"
             id="Email-input"
-            class="button-mail"
+            class="input-mail"
           />
-          <button type="button" class="button">Подписаться</button>
+          <button type="button" class="button">
+            Подписаться
+            <svg class="icon-send">
+              <use href="./img/icon-send.svg"></use>
+            </svg>
+          </button>
         </div>
       </div>
       <div class="devgoit">
         <p class="data">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
+
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector(".page-header")
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
   </body>
 </html>
