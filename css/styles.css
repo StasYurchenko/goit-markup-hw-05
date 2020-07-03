@@ -46,6 +46,7 @@ p {
 }
 
 .page-header {
+  z-index: 999;
   position: fixed;
   width: 100%;
   top: 0;
@@ -664,6 +665,7 @@ p {
 .filter {
   padding-top: 0;
   padding-bottom: 34px;
+  margin-top: 93px;
 }
 .portfolio {
   margin-top: 0;
@@ -671,7 +673,6 @@ p {
 }
 .portfolio-header {
   margin-top: 0;
-  margin-bottom: 93px;
 }
 .footer {
   display: flex;
